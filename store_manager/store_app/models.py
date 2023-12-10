@@ -9,21 +9,18 @@ class Store(Model):
 
     """
 
-    nombre = models.CharField(max_length=100, default="Tienda X")
-    contacto = models.EmailField(
-        blank=False, null=False, default="no_email_contact@mail.com"
-    )
-    ubicacion = models.CharField(max_length=150, blank=True, null=True)
-    fecha_habilitacion = models.DateField(auto_now=True)
+    nombre = models.CharField(max_length=100, default="Cerveza X")
+    descripcion = models.CharField(max_length=300, default="Cerveza ...")
+    
 
     # podemos crear la tabla con un nombre especifico pero se lo tenemos
     # que indicar directamente en la metaclase
 
     class Meta:
-        db_table = "tiendas_buenos_aires"
+        db_table = "Cervezas"
 
     def __str__(self):
-        return f"La tienda: {self.nombre} ubicada en {self.ubicacion}"
+        return f"Cervezas: {self.nombre}"
 
     def get_fields(self):
         """

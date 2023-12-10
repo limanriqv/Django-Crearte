@@ -30,17 +30,17 @@ class StoreDetailView(StoreBaseView, DetailView):
 
 class StoreCreateView(StoreBaseView, CreateView):
     template_name = "store_create.html"
-    extra_context = {"tipo": "Crear Store"}
+    extra_context = {"tipo": "Crear"}
 
 
 class StoreUpdateView(StoreBaseView, UpdateView):
     template_name = "store_create.html"
-    extra_context = {"tipo": "Actualizar Store"}
+    extra_context = {"tipo": "Actualizar"}
 
 
 class StoreDeleteView(StoreBaseView, DeleteView):
     template_name = "store_delete.html"
-    extra_context = {"tipo": "Borrar Store"}
+    extra_context = {"tipo": "Borrar"}
 
 
 # -> store_app.urls.py
