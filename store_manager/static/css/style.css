@@ -902,7 +902,7 @@ button.submit:hover {
     width: 100%;
     gap: 5rem;
     grid-auto-rows: 15rem;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
 
