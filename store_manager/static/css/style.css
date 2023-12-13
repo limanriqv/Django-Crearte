@@ -941,12 +941,13 @@ main form label {
     color: white;
 }
 
-ul {
-    color: white;
-    display: grid;
-    width: 100%;
-    gap: 1rem;
-    
-    grid-template-columns:1fr 1fr 1fr 1fr
+table{
+    table-layout: fixed;
+    width: 250px;
+}
 
+th, td {
+    border: 1px solid blue;
+    width: 100px;
+    word-wrap: break-word;
 }
