@@ -16,7 +16,7 @@
             <li>Descripcion : {{store.descripcion}}</li>
 
             <li>Nombre: {{store.nombre}}</li>
-            
+
             <li>Descripcion : {{store.descripcion}}</li>
             <li>
               <div>
@@ -37,6 +37,50 @@
           </ul>
   
         </fieldset>
+
+
+        <table class="default">
+
+          <tr>
+        
+            <th>Nombre</th>
+        
+            <th>Nombre</th>
+        
+            <th>descripcion</th>
+
+            <th>descripcion</th>
+
+            <th>Acciones</th>
+        
+          </tr>
+        
+          <tr>
+        
+            <td>{{store.nombre}}</td>
+        
+            <td>{{store.nombre}}</td>
+        
+            <td>{{store.descripcion}}</td>
+
+            <td>{{store.descripcion}}</td>
+
+            <td><div>
+              <label for="">Detalles: </label>
+              <a href="{% url 'store:detail' store.id  %}">🟢</a>
+            </div>
+            <div>
+              <label for="">Borrar: </label>
+              <a href="{% url 'store:delete' store.id %}">❌</a>
+            </div>
+            <div>
+              <label for="">Editar: </label>
+              <a href="{% url 'store:update' store.id %}">📋</a>
+            </div></td>
+        
+          </tr>
+      
+        </table>
         {% endfor %}
       </div>
   
