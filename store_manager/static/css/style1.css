@@ -2,8 +2,9 @@
 
 body {
     margin:0;
-    border:10px solid green;
+    
     position:absolute;
+    background-color: rgb(12, 40, 12);
    
 }
 
