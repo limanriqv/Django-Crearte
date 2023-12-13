@@ -941,3 +941,13 @@ main form label {
     color: white;
 }
 
+ul {
+    color: white;
+    display: grid;
+    width: 100%;
+    gap: 5rem;
+    
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+
