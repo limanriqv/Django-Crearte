@@ -10,7 +10,10 @@ class Store(Model):
     """
 
     nombre = models.CharField(max_length=100, default="Cerveza X")
-    descripcion = models.CharField(max_length=300, default="Cerveza ...")
+    estilo = models.CharField(max_length=50)
+    precio = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)
+    cantidad_disponible = models.IntegerField(default=0)
+    fecha_habilitacion = models.DateField(auto_now=True)
     
 
     # podemos crear la tabla con un nombre especifico pero se lo tenemos
