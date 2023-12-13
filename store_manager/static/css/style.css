@@ -943,11 +943,11 @@ main form label {
 
 table{
     table-layout: fixed;
-    width: 250px;
+    width: 75%;
 }
 
 th, td {
-    border: 1px solid blue;
-    width: 100px;
+    border: 1px solid rgb(0, 255, 30);
+    width: 25%;
     word-wrap: break-word;
 }
