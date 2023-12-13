@@ -944,6 +944,7 @@ main form label {
 table{
     table-layout: fixed;
     width: 75%;
+    margin-bottom: 10px;
 }
 
 th, td {
