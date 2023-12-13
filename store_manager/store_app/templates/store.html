@@ -8,7 +8,7 @@
       <h2><a href="{% url 'store:create' %}">Crear una cerveza</a></h2>
       <div class="list">
         {% for store in store_list %}
-        <fieldset>
+        <div>
           <legend>Nombre: {{store.nombre}}</legend>
         
         <table>
@@ -54,7 +54,7 @@
       
         </table>
 
-      </fieldset>
+      <div>
         {% endfor %}
       </div>
   
