@@ -10,36 +10,11 @@
         {% for store in store_list %}
         <fieldset>
           <legend>Nombre: {{store.nombre}}</legend>
-          <ul>
-            <li>Nombre: {{store.nombre}}</li>
-
-            <li>Descripcion : {{store.descripcion}}</li>
-
-            <li>Nombre: {{store.nombre}}</li>
-
-            <li>Descripcion : {{store.descripcion}}</li>
-            <li>
-              <div>
-                <label for="">Detalles: </label>
-                <a href="{% url 'store:detail' store.id  %}">🟢</a>
-              </div>
-              <div>
-                <label for="">Borrar: </label>
-                <a href="{% url 'store:delete' store.id %}">❌</a>
-              </div>
-              <div>
-                <label for="">Editar: </label>
-                <a href="{% url 'store:update' store.id %}">📋</a>
-              </div>
-
-            </li>
-
-          </ul>
-  
-        </fieldset>
+         
+        
 
 
-        <table class="list">
+        <table>
 
           <tr>
         
@@ -81,6 +56,8 @@
           </tr>
       
         </table>
+
+      </fieldset>
         {% endfor %}
       </div>
   
